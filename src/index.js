@@ -3,7 +3,7 @@ require("./db/mongoose");
 const usersRouters = require("./routers/users");
 const tasksRouters = require("./routers/tasks");
 const errorsRouters = require("./routers/errors");
-const testRouters = require("./routers/test");
+const otherRouters = require("./routers/other");
 const express = require("express");
 const app = express();
 
@@ -25,7 +25,7 @@ app.use(
   // use the following custom routes defined in the '/routers' folder
   usersRouters,
   tasksRouters,
-  testRouters,
+  otherRouters,
   errorsRouters
 );
 
